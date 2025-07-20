@@ -1,5 +1,7 @@
 package differentapp;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -17,14 +19,14 @@ public class LaunchApplication {
 	}
 	
 	@Test(priority=1)
-	public void test() throws InterruptedException {
+	public void test() throws InterruptedException, IOException {
 		driver.get("https://demoqa.com/");
 		
 		LoginInToApp obj=new LoginInToApp(driver);
 		obj.loginPage();
 	}
 	@Test(priority=2)
-	public void testTwo() throws InterruptedException {
+	public void testTwo() throws InterruptedException, IOException {
 		
         driver.get("https://demoqa.com/");
 		
