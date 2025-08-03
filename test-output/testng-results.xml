@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-13T10:09:10 IST" name="Default suite" finished-at="2025-07-13T10:09:37 IST" duration-ms="26279">
+  <suite started-at="2025-08-03T12:31:54 IST" name="Default suite" finished-at="2025-08-03T12:32:12 IST" duration-ms="17849">
     <groups>
     </groups>
-    <test started-at="2025-07-13T10:09:10 IST" name="Default test" finished-at="2025-07-13T10:09:37 IST" duration-ms="26279">
-      <class name="differentapp.RerunFailedTestRunner">
-        <test-method signature="rerunfailedtestcases()[pri:0, instance:differentapp.RerunFailedTestRunner@28eaa59a]" started-at="2025-07-13T10:09:10 IST" name="rerunfailedtestcases" finished-at="2025-07-13T10:09:37 IST" duration-ms="26214" status="PASS">
+    <test started-at="2025-08-03T12:31:54 IST" name="Default test" finished-at="2025-08-03T12:32:12 IST" duration-ms="17849">
+      <class name="base.RunnerClass">
+        <test-method signature="test()[pri:0, instance:base.RunnerClass@3427b02d]" started-at="2025-08-03T12:31:54 IST" name="test" finished-at="2025-08-03T12:32:11 IST" duration-ms="17768" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- rerunfailedtestcases -->
-      </class> <!-- differentapp.RerunFailedTestRunner -->
+        </test-method> <!-- test -->
+      </class> <!-- base.RunnerClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

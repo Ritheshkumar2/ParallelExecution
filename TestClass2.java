@@ -1,23 +1,22 @@
 package pages;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import base.BaseClass;
+import base.BaseClassThreadSafe;
 
-public class TestClass {
+public class TestClass2 {
 	
 	WebDriver driver;
 	
 	@BeforeTest
 	public void setUp() {
 		
-		BaseClass base=new BaseClass();
-		driver=base.getDriver("chrome");
-		//Assert.assertTrue(false);
+		BaseClassThreadSafe obj=new BaseClassThreadSafe();
+		driver=obj.getdriver("edge");
 		
 	}
 	
@@ -26,23 +25,8 @@ public class TestClass {
 		LoginPage login=new LoginPage(driver);
 		login.login("Admin", "admin123");
 		
-		
 	}
 	
-	@Test
-    public void loginTest() {
-        Assert.assertTrue(false);
-    }
-
-    @Test
-    public void dashboardTest() {
-        Assert.assertTrue(false);
-    }
-
-    @Test
-    public void logoutTest() {
-        Assert.assertTrue(true);
-    }
 	@AfterTest
 	public void teardown() {
 		driver.quit();

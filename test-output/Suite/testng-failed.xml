@@ -3,13 +3,16 @@
 <suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="utils.TestListener"/>
-    <listener class-name="utils.AnnotationTransformer"/>
+    <listener class-name="differentapp.AnootationTest"/>
+    <listener class-name="differentapp.ITestListenersrelated"/>
   </listeners>
   <test thread-count="2" parallel="classes" name="Test(failed)">
     <classes>
       <class name="differentapp.LaunchApplication">
         <methods>
-          <include name="testTwo"/>
+          <include name="test5"/>
+          <include name="test4"/>
+          <include name="test3"/>
           <include name="teardown"/>
           <include name="setUp"/>
         </methods>
