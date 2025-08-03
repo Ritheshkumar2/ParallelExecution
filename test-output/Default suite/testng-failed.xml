@@ -3,11 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="base.RunnerClass">
         <methods>
           <include name="test"/>
         </methods>
       </class> <!-- base.RunnerClass -->
+=======
+      <class name="calender.MainClass">
+        <methods>
+          <include name="testone"/>
+        </methods>
+      </class> <!-- calender.MainClass -->
+>>>>>>> b54eae38f68f498f88da10ba2f21e6be1106df1c
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

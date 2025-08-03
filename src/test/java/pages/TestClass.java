@@ -1,5 +1,7 @@
 package pages;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -22,7 +24,7 @@ public class TestClass {
 	}
 	
 	@Test
-	public void logintest() {
+	public void logintest() throws IOException, InterruptedException {
 		LoginPage login=new LoginPage(driver);
 		login.login("Admin", "admin123");
 		

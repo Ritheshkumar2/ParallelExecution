@@ -1,5 +1,7 @@
 package differentapp;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -24,7 +26,7 @@ public class LaunchApplication {
 	}
 	
 	@Test(priority=1)
-	public void test() throws InterruptedException {
+	public void test() throws InterruptedException, IOException {
 		driver.get("https://demoqa.com/");
 		
 		LoginInToApp obj=new LoginInToApp(driver);
@@ -44,6 +46,7 @@ public class LaunchApplication {
 	
 	
 	@Test(priority=2)
+<<<<<<< HEAD
 	public void test3() throws InterruptedException {
 		System.out.print("test 3");
 		Assert.assertTrue(false);
@@ -63,6 +66,16 @@ public class LaunchApplication {
 		System.out.print("test 5");
 		Assert.assertTrue(false);
 
+=======
+	public void testTwo() throws InterruptedException, IOException {
+		
+        driver.get("https://demoqa.com/");
+		
+		LoginInToApp obj=new LoginInToApp(driver);
+		obj.loginPage();
+		TextBoxApp obj1=new TextBoxApp(driver);
+		obj1.testBox();
+>>>>>>> b54eae38f68f498f88da10ba2f21e6be1106df1c
 	}
 	
 	@AfterMethod
